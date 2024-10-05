@@ -1,0 +1,44 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    background-color: #f8f7f2; /* 可选的背景颜色 */
+}
+.blog-container{
+    padding: 20px;
+    width: 800px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.detail-content{
+    background-color: #ffffff;
+    justify-items: center;
+    align-items: center;
+    line-height:2;
+    color: #514936;
+    border-radius: 5px;
+}
+.icon-back img{
+    width: 40px;
+    height: 40px;
+}
+.icon-back{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f6f5ec;
+    border-radius:5px;
+    padding:20px 10px;
+}
+
+.icon-back a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: #4a4a47;
+}

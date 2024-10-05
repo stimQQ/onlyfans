@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download any videos from OnlyFans">
+    <title>OnlyFans video Downloader</title>
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+<header class="header-container">
+    <div class="header-left">
+        <img src="img/logo.png" alt="OnlyFansDownloader">
+        <h3>Onlyfans videos Downloader</h3>
+    </div>
+
+    <nav class="nav-container">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="blog.html" class="nav-link active" >Blog</a>
+    </nav>
+</header>
+<main class="blog-main">
+    <h2>How to download videos from Onlyfans</h2>
+    <div class="blog-list01">
+        <a href="blog-detail01.html">
+        <img src="https://t7.baidu.com/it/u=3038817810,32670274&fm=193&f=GIF" alt="博客封面1">
+        <h3>How to easily download videos from Onlyfans？</h3>
+        <p>只需三次简单点击，您就可以下载任何来自 OnlyFans 的视频，无论是私人消息视频还是公共视频。</p>
+        </a>
+    </div>
+    <div class="blog-list01">
+        <a href="blog-detail02.html">
+        <img src="cover2.jpg" alt="博客封面2">
+        <h3>如何轻松下载 Onlyfans 视频？</h3>
+        <p>只需三次简单点击，您就可以下载任何来自 OnlyFans 的视频，无论是私人消息视频还是公共视频。</p>
+        </a>
+    </div>
+    <div class="blog-list01">
+        <a href="blog-detail03.html">
+        <img src="cover3.jpg" alt="博客封面3">
+        <h3>如何轻松下载 Onlyfans 视频？</h3>
+        <p>只需三次简单点击，您就可以下载任何来自 OnlyFans 的视频，无论是私人消息视频还是公共视频。</p>
+        </a>
+    </div>
+
+</main>
+<script>
+
+    // 获取所有导航链接
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // 为每个链接添加点击事件
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            // 阻止链接的默认行为
+            event.preventDefault();
+            // 移除所有链接的选中状态
+            navLinks.forEach(nav => nav.classList.remove('active'));
+
+            // 为当前点击的链接添加选中状态
+            this.classList.add('active');
+            window.location.href=this.href
+        });
+    });
+</script>
+</body>
+</html>

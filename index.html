@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="With just one click, you can download any video from OnlyFans,
+whether it's a private message video or a public video.">
+    <meta name="keywords" content="OnlyFans, video download, OFDownloader, download tools">
+    <title>OFDownloader - OnlyFans Downloader</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header-container">
+    <div class="header-left">
+        <img src="img/logo.png" alt="">
+        <h3>OnlyFansDownloader</h3>
+    </div>
+    
+    <nav class="nav-container">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="blog.html" class="nav-link ">Blog</a>
+    </nav>
+</header>
+<main>
+    <h2>The best OnlyFans video Downloader </h2>
+    <p>"With just one click, you can download any video from OnlyFans,
+        whether it's a private message video or a public video."</p>
+    <a href="https://stimqq.github.io/onlyfans/OnlyFansVideoDownloader.zip" id="download-link" download >Download the Extension</a>
+    <button id="watch-video">Watch the 30-second tutorial</button>
+    <div id="video-modal" style="display:none;">
+        <iframe src="https://example.com/tutorial-video" width="560" height="315" allowfullscreen></iframe>
+        <button id="close-video">Close</button>
+    </div>
+    <div>
+        <video class="video-box" src="blog_details.html" controls ></video>
+    </div>
+</main>
+<script>
+    document.getElementById('watch-video').onclick = function() {
+        document.getElementById('video-modal').style.display = 'block';
+    };
+    document.getElementById('close-video').onclick = function() {
+        document.getElementById('video-modal').style.display = 'none';
+    };
+
+    // 获取所有导航链接
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // 为每个链接添加点击事件
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            // 阻止链接的默认行为
+            event.preventDefault();
+            // 移除所有链接的选中状态
+            navLinks.forEach(nav => nav.classList.remove('active'));
+
+            // 为当前点击的链接添加选中状态
+            this.classList.add('active');
+            window.location.href=this.href
+        });
+    });
+</script>
+</body>
+</html>
