@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: #ffcc00;
+}
+.header-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.header-left img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+
+}
+nav {
+    display: flex;
+}
+
+.nav-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-link.active {
+    background: #000000; /* 选中时的背景颜色 */
+    color: #ffcc00; /* 选中时的文字颜色 */
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.8em;
+}
+
+.blog-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog-list01{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.blog-list01 img{
+    width: 100%;
+    border-radius: 4px;
+}
+.blog-list01 a{
+    text-decoration: none;
+    color: #000;
+}
+.logo-img{
+    width: 50px;
+    height: 50px;
+}
+.nav-container{
+    margin-left: 200px;
+}
+.video-box{
+    width: 50%;
+    height: 50%;
+}
