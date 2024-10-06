@@ -42,3 +42,6 @@ body{
     margin-left: 10px;
     color: #4a4a47;
 }
+blog-container img{
+width: 100%;
+}
