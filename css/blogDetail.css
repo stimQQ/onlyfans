@@ -10,7 +10,7 @@ body{
 }
 .blog-container{
     padding: 20px;
-    width: 800px;
+    width: 960px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -44,4 +44,5 @@ body{
 }
 blog-container img{
 width: 100%;
+height: auto;
 }
